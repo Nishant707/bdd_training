@@ -16,5 +16,5 @@ And I fill the add employee section
 And I click on save employee
 And I should navigate to add personal detail section with added employee
 Examples: 
-	| username | password | firstname | middlename | lname | empid | toggle_login | ccount_user | account_password | confirm_password | status   |
+	| username | password | firstname | middlename | lname | empid | toggle_login |account_user | account_password | confirm_password | status   |
 	| Admin    | admin123 | Nishant   | j          | Bhat  | 1001  | on           | nishant     | Welcome@123      | Welcome@123      | disabled |

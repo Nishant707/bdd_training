@@ -84,11 +84,13 @@ namespace SpecFlowProject1.Features
         [Xunit.SkippableFactAttribute(DisplayName="Valid Credential")]
         [Xunit.TraitAttribute("FeatureTitle", "Login")]
         [Xunit.TraitAttribute("Description", "Valid Credential")]
-        [Xunit.TraitAttribute("Category", "tag1")]
+        [Xunit.TraitAttribute("Category", "high")]
+        [Xunit.TraitAttribute("Category", "valid")]
         public virtual void ValidCredential()
         {
             string[] tagsOfScenario = new string[] {
-                    "tag1"};
+                    "high",
+                    "valid"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Credential", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 9
@@ -133,13 +135,15 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableTheoryAttribute(DisplayName="Invalid Crredential")]
         [Xunit.TraitAttribute("FeatureTitle", "Login")]
         [Xunit.TraitAttribute("Description", "Invalid Crredential")]
-        [Xunit.TraitAttribute("Category", "tag2")]
+        [Xunit.TraitAttribute("Category", "low")]
+        [Xunit.TraitAttribute("Category", "invalid")]
         [Xunit.InlineDataAttribute("shyam", "pass", new string[0])]
         [Xunit.InlineDataAttribute("ram", "pass123", new string[0])]
         public virtual void InvalidCrredential(string username, string password, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "tag2"};
+                    "low",
+                    "invalid"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

@@ -139,6 +139,12 @@ testRunner.And("I click on login", ((string)(null)), ((TechTalk.SpecFlow.Table)(
 #line 11
 testRunner.And("I click on My Info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+#line 12
+testRunner.And("I click on emergency contact section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 13
+testRunner.And("I click on add Assigned Emergency Contacts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "name",
                             "relationship",
@@ -151,13 +157,13 @@ testRunner.And("I click on My Info", ((string)(null)), ((TechTalk.SpecFlow.Table
                             string.Format("{0}", home_Telephone),
                             string.Format("{0}", mobile),
                             string.Format("{0}", work_Telephone)});
-#line 12
+#line 14
 testRunner.And("I fill emergency contact details", ((string)(null)), table1, "And ");
 #line hidden
-#line 15
+#line 17
 testRunner.And("I click on save emergency contact", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 16
+#line 18
 testRunner.Then("I should be navigated to view emergency contact section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

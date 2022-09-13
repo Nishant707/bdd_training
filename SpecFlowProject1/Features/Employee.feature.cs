@@ -85,7 +85,7 @@ namespace SpecFlowProject1.Features
         [Xunit.TraitAttribute("Description", "Add valid employee")]
         [Xunit.TraitAttribute("Category", "tag1")]
         [Xunit.InlineDataAttribute("Admin", "admin123", "Nishant", "j", "Bhat", "1001", "on", "nishant", "Welcome@123", "Welcome@123", "disabled", new string[0])]
-        public virtual void AddValidEmployee(string username, string password, string firstname, string middlename, string lname, string empid, string toggle_Login, string ccount_User, string account_Password, string confirm_Password, string status, string[] exampleTags)
+        public virtual void AddValidEmployee(string username, string password, string firstname, string middlename, string lname, string empid, string toggle_Login, string account_User, string account_Password, string confirm_Password, string status, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "tag1"};
@@ -102,7 +102,7 @@ namespace SpecFlowProject1.Features
             argumentsOfScenario.Add("lname", lname);
             argumentsOfScenario.Add("empid", empid);
             argumentsOfScenario.Add("toggle_login", toggle_Login);
-            argumentsOfScenario.Add("ccount_user", ccount_User);
+            argumentsOfScenario.Add("account_user", account_User);
             argumentsOfScenario.Add("account_password", account_Password);
             argumentsOfScenario.Add("confirm_password", confirm_Password);
             argumentsOfScenario.Add("status", status);
@@ -161,7 +161,7 @@ testRunner.And("I click on Add Employee", ((string)(null)), ((TechTalk.SpecFlow.
                             string.Format("{0}", lname),
                             string.Format("{0}", empid),
                             string.Format("{0}", toggle_Login),
-                            "<account_user>",
+                            string.Format("{0}", account_User),
                             string.Format("{0}", account_Password),
                             string.Format("{0}", confirm_Password),
                             string.Format("{0}", status)});

@@ -9,6 +9,8 @@ When I enter username as 'Admin'
 And I enter password as 'admin123'
 And I click on login
 And I click on My Info
+And I click on emergency contact section
+And I click on add Assigned Emergency Contacts
 And I fill emergency contact details
 	| name   | relationship   | home_telephone   | mobile   | work_telephone   |
 	| <name> | <relationship> | <home_telephone> | <mobile> | <work_telephone> |

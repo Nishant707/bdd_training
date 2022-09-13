@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
+
 namespace SpecFlowProject1.Hooks
 {
     [Binding]
